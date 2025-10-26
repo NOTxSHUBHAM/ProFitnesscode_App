@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="@dimen/padding_medium"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/today_activity"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_large" />
+
+        <!-- Circular Progress View -->
+        <com.example.profitness.widgets.CircularProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="@dimen/circular_progress_size"
+            android:layout_height="@dimen/circular_progress_size"
+            android:layout_gravity="center"
+            app:progressColor="@color/colorAccent"
+            app:backgroundColor="@color/colorPrimaryDark"
+            app:strokeWidth="@dimen/stroke_width"
+            android:layout_marginBottom="@dimen/margin_large" />
+
+        <!-- Goal Status -->
+        <TextView
+            android:id="@+id/tv_goal_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/of_daily_goal"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/margin_large" />
+
+        <!-- Stats Container -->
+        <LinearLayout
+            android:id="@+id/stats_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="@dimen/margin_large">
+
+            <!-- Distance Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:padding="@dimen/padding_medium"
+                android:layout_margin="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance"
+                    android:textSize="@dimen/text_size_xsmall"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+            <!-- Calories Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:padding="@dimen/padding_medium"
+                android:layout_margin="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/tv_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calories"
+                    android:textSize="@dimen/text_size_xsmall"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+            <!-- Active Time Card -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:padding="@dimen/padding_medium"
+                android:layout_margin="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/tv_active_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active_time"
+                    android:textSize="@dimen/text_size_xsmall"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_today"
+            android:layout_gravity="center"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="@dimen/margin_medium" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProFitness</string>
+    <string name="today_activity">Today\'s Activity</string>
+    <string name="steps">Steps</string>
+    <string name="distance">Distance</string>
+    <string name="calories">Calories</string>
+    <string name="active_time">Active Time</string>
+    <string name="reset_today">Reset Today</string>
+    <string name="goal_achieved">Goal Achieved!</string>
+    <string name="of_daily_goal">%d%% of daily goal</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="step_counter_not_available">Step counter not available on this device</string>
+    <string name="step_count_reset">Step count reset</string>
+    <string name="daily_goal">Daily Goal</string>
+    <string name="total_steps">Total Steps</string>
+    <string name="weekly_average">Weekly Average</string>
+    <string name="calories_burned">Calories Burned</string>
+    <string name="workout_sessions">Workout Sessions</string>
+    <string name="no_data_available">No data available</string>
+    <string name="km">km</string>
+    <string name="cal">cal</string>
+</resources>
